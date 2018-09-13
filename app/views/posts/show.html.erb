@@ -7,9 +7,5 @@
   <%= @post.comments.each do |comment| %>
     Comments: <%= comment.content %>
   <% end %>
-  <% @post.comments.each do |comment| %>
-    <li>
-      <%= link_to comment.user_id.username, user_path(comment.user) %>
-    </li>
-  <% end %>
+
 </div>
