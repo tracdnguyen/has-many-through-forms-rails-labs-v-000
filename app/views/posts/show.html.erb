@@ -7,7 +7,7 @@
   <%= @post.comments.each do |comment| %>
     Comments: <%= comment.content %>
   <% end %>
-  <%= @post.comments.users.each do |user| %>
+  <%= @post.users.each do |user| %>
     <%= user.username %>
   <% end %>
 </div>
