@@ -10,7 +10,6 @@
   <% @post.comments.each do |comment| %>
     <li>
       <%= link_to comment.user_id.username, user_path(comment.user) %>
-      <%= doctor.patients.count %>
     </li>
   <% end %>
 </div>
