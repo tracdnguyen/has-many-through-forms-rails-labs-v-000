@@ -4,4 +4,7 @@
   <% @post.categories.each do |category| %>
     Category: <%= category.name %>
   <% end %>
+  <%= @post.comments.each do |comment| %>
+    Comments: <%= comment.context %>
+  <% end %>
 </div>
